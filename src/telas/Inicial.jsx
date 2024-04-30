@@ -3,17 +3,11 @@
 //importando os componentes, todos os componentes que usamos é preciso importál-os 
 import { StyleSheet, View } from "react-native";
 import { Cabecalho } from "../componentes/Cabecalho";
-import{ Botao } from "../componentes/Botao"
 
 export function Inicial(){
     return(
         <View style={styles.container}> 
-            <Cabecalho 
-                titulo="Senai Roberto Mange"
-                subtitulo="2DS-TB"/>
-            <Botao texto = "Usuários"/>
-            <Botao texto = "Sensores"/>
-            <Botao texto = "Sobre"/>
+            <Cabecalho titulo="Localizador"/>
             
         </View>
     );
@@ -24,7 +18,7 @@ export function Inicial(){
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#000000' 
+        backgroundColor: '#fff' 
     },
 
 });

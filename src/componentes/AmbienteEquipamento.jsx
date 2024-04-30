@@ -34,6 +34,8 @@ const styles = StyleSheet.create({
     },
     containerDados:{
         flex: 1,
+        borderWidth: 1,
+        borderColor: '#dfdfdf',
         backgroundColor: '#ffff',
         borderRadius: 5,
         padding:10,
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
         width: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#560bad',
+        backgroundColor: '#cfcfcf',
         marginStart: 10,
         borderRadius: 5, 
         borderRadius: 5,

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {View, Text, TouchableOpacity, TextInput, StyleSheet} from "react-native"
-import { useNavigation } from "@react-navigation/native"
+import {useNavigation} from '@react-navigation/native'
 
 export function Login(){
 
@@ -10,8 +10,9 @@ export function Login(){
 
     const navigation = useNavigation()
 
+    // função
     function abrirInicial(){
-        navigation.navigate('inicial')
+        navigation.navigate('rotasTab')
     }
 
     return(
@@ -20,7 +21,7 @@ export function Login(){
             <TextInput
                 style={styles.campo}
                 placeholder='Usuário' 
-                placeholderTextColor='#e1e5f2'
+                placeholderTextColor='#560bad'
                 onChangeText={setUsuario}
                 value={usuario}
             />
@@ -28,16 +29,13 @@ export function Login(){
             <TextInput
                 style={styles.campo}
                 placeholder='Senha'
-                placeholderTextColor='#e1e5f2'
+                placeholderTextColor='#560bad'
                 keyboardType='default'
                 onChangeText={setSenha}
                 value={senha}     
             />
     
-            <TouchableOpacity 
-                style={styles.botao}
-                onPress={abrirInicial}
-            >
+            <TouchableOpacity style={styles.botao} onPress={abrirInicial}>
                 <Text style={styles.textoBtn}>Entrar</Text>
             </TouchableOpacity>
             
@@ -54,7 +52,7 @@ export function Login(){
 const styles = StyleSheet.create({
     container: {
         flex:1, 
-        backgroundColor: '#000',
+        backgroundColor: '#fff',
         justifyContent:'center',
         alignItems: 'center'
     },
@@ -62,8 +60,10 @@ const styles = StyleSheet.create({
     campo: {
         width: 350,
         height: 50,
-        backgroundColor: '#560bad',
-        color: '#FFFF',
+        borderWidth: 1.5,
+        borderColor: '#dfdfdf',
+        backgroundColor: '#fff',
+        color: '#560bad',
         marginVertical: 7,
         padding: 10,
         borderRadius: 5, 
@@ -78,24 +78,23 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginVertical: 15,
-        backgroundColor: '#7209b7',
+        backgroundColor: '#560bad',
         borderRadius: 5,
-        padding: 7
-        // marginStart: 155 
+        padding: 7, 
 
     }, 
     textoBtn: {
-        color: '#FFFF',
+        color: '#fff',
         fontSize: 15
     },
     cadastro: {
-        width: 100,
-        justifyContent: 'center',
-        alignItems: 'center',
+        width: 345,
+        justifyContent: 'flex-end',
+        alignItems: 'flex-end',
         borderRadius: 5
     },
     textoCadastro:{
-        color: '#fff',
+        color: '#560bad',
         fontSize: 15,
     }
     

@@ -12,7 +12,7 @@ export const  Cabecalho = ({titulo, subtitulo}) => {
 
 const estilos = StyleSheet.create({
     container:{
-        backgroundColor: '#8338ec', 
+        backgroundColor: '#560bad', 
         alignItems: 'center',
         padding: 15,
     },

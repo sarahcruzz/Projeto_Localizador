@@ -26,7 +26,7 @@ export function FormularioUsuario({adicionar}){
                 <TextInput
                 style={styles.campo}
                 placeholder="Name"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="default"
                 onChangeText={setNome}
                 value={nome}
@@ -35,7 +35,7 @@ export function FormularioUsuario({adicionar}){
                 <TextInput
                 style={styles.campo}
                 placeholder="Email"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="email-adress"
                 onChangeText={setEmail}
                 value={email}
@@ -44,7 +44,7 @@ export function FormularioUsuario({adicionar}){
                 <TextInput
                 style={styles.campo}
                 placeholder="Phone Number"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="phone-pad"
                 onChangeText={setTelefone}
                 value={telefone}
@@ -53,7 +53,7 @@ export function FormularioUsuario({adicionar}){
                 <TextInput 
                     style={styles.campo}
                     placeholder='User'
-                    placeholderTextColor='#fff'
+                    placeholderTextColor='#000'
                     keyboardType='default'                
                     onChangeText={setUsuario}
                     value={usuario}
@@ -62,7 +62,7 @@ export function FormularioUsuario({adicionar}){
                 <TextInput 
                     style={styles.campo}
                     placeholder='Password'
-                    placeholderTextColor='#fff'                
+                    placeholderTextColor='#000'                
                     onChangeText={setSenha}
                     value={senha}
                 />     
@@ -89,15 +89,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical:10,
         marginVertical:10,
-        // backgroundColor: "#FFFF"
     },
     containerCampo:{
         flex: 1
     },
     campo: {
         height: 50,
-        backgroundColor: '#560bad',
-        color: '#FFFF',
+        backgroundColor: '#fff',
+        color: '#000',
+        borderWidth: 1,
+        borderColor: '#dfdfdf',
         marginVertical: 5,
         padding: 10,
         borderRadius: 5, 

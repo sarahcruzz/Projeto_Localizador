@@ -1,7 +1,6 @@
 import { StyleSheet, StatusBar, View } from 'react-native';
-import { AmbientesEquipamentos } from './src/telas/AmbientesEquipamentos';
+// com a navegação não precisa desses importes apenas as RotasStacks
 import { RotasStack } from './src/rotas/RotasStack';
-
 
 export default function App() {
   return (

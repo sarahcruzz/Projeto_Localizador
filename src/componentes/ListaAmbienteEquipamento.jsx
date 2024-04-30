@@ -21,7 +21,7 @@ export const ListaAmbienteEquipamento = ({colecao, remover}) =>{
                 )}
                 ListEmptyComponent={() => (
                     <Text style={styles.texto}>
-                        Nenhum ambiente e equipamento armazenado.
+                        Nenhum ambiente e equipamento armazenado
                     </Text>
                 )}
             />
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     texto: {
-        color: '#ffff',
+        color: '#000',
         paddingTop: 24,
         textAlign:'center'
     },

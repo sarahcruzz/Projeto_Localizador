@@ -29,21 +29,23 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         margin: 5,
-        marginVertical:7,
+        marginVertical: 7,
         paddingHorizontal: 15,
     },
     containerDados:{
         flex: 1,
-        backgroundColor: '#ffff',
+        borderWidth: 1,
+        borderColor: '#dfdfdf',
+        backgroundColor: '#fff',
         borderRadius: 5,
-        padding:10,
+        padding: 10,
     },
     
     botao: {
         width: 60,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#560bad',
+        backgroundColor: '#cfcfcf',
         marginStart: 10,
         borderRadius: 5, 
         borderRadius: 5,
@@ -54,7 +56,7 @@ const styles = StyleSheet.create({
 
     },
     textoBotao:{
-        fontSize:26,
+        fontSize: 26,
         color: '#FFFF'
     }
 

@@ -22,7 +22,7 @@ export function ListaUsuario({colecao, remover}){
                 ) }
                 ListEmptyComponent={() => (
                     <Text style={styles.texto}>
-                        Nenhum usuário armazenado.
+                        Nenhum usuário armazenado
                     </Text>
                 )}
             />
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     texto: {
-        color: '#ffff',
+        color: '#000',
         paddingTop: 24,
         textAlign:'center'
     },

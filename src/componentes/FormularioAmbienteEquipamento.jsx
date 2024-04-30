@@ -17,7 +17,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput
                 style={styles.campo}
                 placeholder="Descrição"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="default"
                 onChangeText={setDescricao}
                 value={descricao}
@@ -26,7 +26,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput
                 style={styles.campo}
                 placeholder="Latitude"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="phone-pad"
                 onChangeText={setLatitude}
                 value={latitude}
@@ -35,7 +35,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput
                 style={styles.campo}
                 placeholder="Longitude"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="phone-pad"
                 onChangeText={setLongitude}
                 value={longitude}
@@ -44,7 +44,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput
                 style={styles.campo}
                 placeholder="Status Operacional"
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="default"
                 onChangeText={setStatusOperacional}
                 value={statusOperacional}
@@ -53,7 +53,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput 
                 style={styles.campo}
                 placeholder='Instruções de Segurança'
-                placeholderTextColor='#fff'
+                placeholderTextColor='#000'
                 keyboardType='default'                
                 onChangeText={setInstrucoesSeguranca}
                 value={instrucoesSeguranca}
@@ -62,7 +62,7 @@ export function FormularioAmbienteEquipamento({adicionar}){
             <TextInput 
                 style={styles.campo}
                 placeholder='Contato do Responsável'
-                placeholderTextColor='#FFFF'
+                placeholderTextColor='#000'
                 keyboardType="phone-pad"
                 onChangeText={setContatoResponsavel}
                 value={contatoResponsavel}
@@ -87,15 +87,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         paddingVertical:10,
         marginVertical:10,
-        // backgroundColor: "#FFFF"
     },
     containerCampo:{
         flex: 1
     },
     campo: {
         height: 50,
-        backgroundColor: '#560bad',
-        color: '#FFFF',
+        borderWidth: 1,
+        borderColor: '#dfdfdf',
+        backgroundColor: '#fff',
+        color: '#000',
         marginVertical: 5,
         padding: 10,
         borderRadius: 5, 
