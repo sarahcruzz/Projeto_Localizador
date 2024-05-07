@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {View, Text, TouchableOpacity, TextInput, StyleSheet} from "react-native"
+import {View, Text, TouchableOpacity, TextInput, StyleSheet, Image} from "react-native"
 import {useNavigation} from '@react-navigation/native'
 
 export function Login(){
@@ -18,6 +18,11 @@ export function Login(){
     return(
         <View style={styles.container}>
            
+            <Image
+                style={styles.logo}
+                source={require('../../assets/logo.png')}
+            />
+
             <TextInput
                 style={styles.campo}
                 placeholder='Usuário' 
@@ -96,7 +101,12 @@ const styles = StyleSheet.create({
     textoCadastro:{
         color: '#560bad',
         fontSize: 15,
+    },
+    logo:{
+        height:105,
+        width:170,
+        marginBottom:50,
+        marginTop:-155
     }
-    
 
 });
