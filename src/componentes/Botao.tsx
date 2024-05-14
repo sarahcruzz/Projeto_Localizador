@@ -1,8 +1,15 @@
 import { StyleSheet, TouchableOpacity, Text} from "react-native"
-
 import { useState } from 'react'
+
+
+interface BotaoProps {
+    texto: string;
+}
+
+
+
 // o props é um objeto que permite termos acesso a tpodas as propriedades passadas para o componente 
-export const Botao = ({texto}) => {
+export const Botao = ({texto}: BotaoProps ) => {
     // usando o state, os dois parametros funcionam como get e setter, e no 
     //parenteses do useState coloca-se o valor onde ele vai iniciar
     const [cliques, setCliques] = useState(0)
@@ -36,7 +43,7 @@ const estilos = StyleSheet.create({
         marginTop: 24,
         marginStart: 24,
         borderRadius: 12,
-        border: '#8338ec',
+        borderColor: '#8338ec',
         borderWidth: 1
     },
     texto: {

@@ -1,7 +1,17 @@
 import { useState } from "react";
 import {View, StyleSheet, TextInput, Text, TouchableOpacity} from "react-native"
 
-export function FormularioAmbienteEquipamento({adicionar}){
+interface FormularioAmbienteEquipamentoProps{
+    adicionar: (descricao: string,
+                 latitude: string,
+                 longitude: string,
+                 statusOperacional: string,
+                 instrucoesSeguranca: string,
+                 contatoResponsavel: string ) => void
+}
+
+
+export function FormularioAmbienteEquipamento({adicionar}: FormularioAmbienteEquipamentoProps){
     
     const [descricao, setDescricao] = useState('')
     const [latitude, setLatitude] = useState('')
@@ -109,7 +119,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#560bad',
-        marginStart: 10,
+        marginLeft: 10,
         borderRadius: 5, 
         marginVertical: 5
     }, 

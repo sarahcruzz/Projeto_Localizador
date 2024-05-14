@@ -2,7 +2,18 @@
 
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 
-export function Usuario({nome, email, telefone,usuario, senha, excluir}){
+
+interface UsuarioProps {
+    nome: string;
+    email: string;
+    telefone: string;
+    usuario: string; 
+    senha: string; 
+    excluir: () => void;
+}
+
+
+export function Usuario({nome, email, telefone,usuario, senha, excluir}: UsuarioProps){
     return(
         <View style={styles.container}>
 
@@ -48,7 +59,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#cfcfcf',
         marginStart: 10,
         borderRadius: 5, 
-        borderRadius: 5,
     }, 
     texto: {
         color: '#000',

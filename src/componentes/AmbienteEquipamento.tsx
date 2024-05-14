@@ -1,7 +1,25 @@
 // aqui será definido como o programa apresentará cada ambiente e equipamento individualmente 
 import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
 
-export const AmbienteEquipamento = ({descricao, latitude, longitude, statusOperacional, instrucoesSeguranca, contatoResponsavel, excluir }) =>{
+interface AmbienteEquipamentoProps{
+    descricao: string;
+    statusOperacional: string;
+    instrucoesSeguranca: string;
+    contatoResponsavel: string;
+    latitude: string;
+    longitude: string;
+    excluir: () => void
+}
+
+
+
+export const AmbienteEquipamento = ({descricao,
+                                     latitude,
+                                     longitude,
+                                     statusOperacional,
+                                     instrucoesSeguranca,
+                                     contatoResponsavel,
+                                     excluir }: AmbienteEquipamentoProps ) =>{
     return(
         <View style={styles.container}>
 
@@ -48,7 +66,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#cfcfcf',
         marginStart: 10,
         borderRadius: 5, 
-        borderRadius: 5,
+        
     }, 
     texto: {
         color: '#000',
