@@ -23,7 +23,9 @@
     "react-native-uuid": "^2.0.2",
     "react-native-vector-icons": "^10.0.3",
     "typescript": "^5.4.5",
-    "@types/react": "~18.2.45"
+    "@types/react": "~18.2.45",
+    "expo-location": "~16.5.5",
+    "react-native-maps": "1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
